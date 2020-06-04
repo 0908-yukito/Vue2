@@ -10,16 +10,15 @@ const functions =
  const bucketName = 
  'text-4f266.appspot.com';
  const filePath = object.name;
- const name = 
- filePath.split('.').shift();
+ const name =  filePath.split(".").shift();
  const db = admin.firestore();
 
  db.collection('people').add({ 
      name: name,
-     url:
- `https://firebasestorage.googleapis.com/v0 
- /b/${bucketName}/o/${encodeURIComponent(fi
-   ,lePath)}?alt=media`,
+     url:`https://firebasestorage.googleapis.com/v0 
+ /b/${bucketName}/o/${encodeURIComponent(
+   filePath
+   )}?alt=media`,
  }).then(() => console.log('Done')); 
  });
 

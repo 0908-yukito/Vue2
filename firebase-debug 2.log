@@ -1,0 +1,17 @@
+[debug] [2020-06-03T05:46:24.555Z] ----------------------------------------------------------------------
+[debug] [2020-06-03T05:46:24.557Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-06-03T05:46:24.557Z] CLI Version:   8.4.1
+[debug] [2020-06-03T05:46:24.558Z] Platform:      darwin
+[debug] [2020-06-03T05:46:24.558Z] Node Version:  v12.16.3
+[debug] [2020-06-03T05:46:24.559Z] Time:          Wed Jun 03 2020 14:46:24 GMT+0900 (GMT+09:00)
+[debug] [2020-06-03T05:46:24.559Z] ----------------------------------------------------------------------
+[debug] [2020-06-03T05:46:24.560Z] 
+[debug] [2020-06-03T05:46:24.570Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-03T05:46:24.570Z] > authorizing via signed-in user
+[debug] [2020-06-03T05:46:24.570Z] [iam] checking project text-4f266 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2020-06-03T05:46:24.574Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-06-03T05:46:24.574Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-06-03T05:46:24.866Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 03 Jun 2020 05:46:24 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-03T05:46:24.888Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/text-4f266:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
